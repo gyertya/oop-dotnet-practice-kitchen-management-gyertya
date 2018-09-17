@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace KitchenManagement.Employee
 {
-    class Chef : KnifeUser
+    class Chef : KnifeOwner
     {
         public Chef(string name, int salary, DateTime birthDate): base(name, salary, birthDate)
         {

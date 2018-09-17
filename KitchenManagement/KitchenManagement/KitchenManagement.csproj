@@ -45,7 +45,7 @@
   <ItemGroup>
     <Compile Include="Employee\KnifeUser\Chef.cs" />
     <Compile Include="Employee\KnifeUser\Cook.cs" />
-    <Compile Include="Employee\KnifeUser\KnifeUser.cs" />
+    <Compile Include="Employee\KnifeUser\KnifeOwner.cs" />
     <Compile Include="Employee\Employee.cs" />
     <Compile Include="Employee\Helper.cs" />
     <Compile Include="Kitchen\Ingredients.cs" />
