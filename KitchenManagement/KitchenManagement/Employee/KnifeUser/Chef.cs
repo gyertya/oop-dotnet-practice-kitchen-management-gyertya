@@ -17,6 +17,21 @@ namespace KitchenManagement.Employee
             Console.WriteLine("Argh argh!");
         }
 
-        
+        public void YellForIngerdients(Ingredient ingredient, Kitchen kitchen)
+        {
+            foreach (var helper in kitchen.Helpers)
+            {
+                if (helper.GiveIngredientToChef(ingredient))
+                {
+                    kitchen.Cooks.First().DoCooking();
+                    return;
+                }
+            }
+
+            foreach (var helper in kitchen.Helpers)
+            {
+                helper.Yell();
+            }
+        }
     }
 }

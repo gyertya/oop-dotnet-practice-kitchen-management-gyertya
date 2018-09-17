@@ -22,7 +22,17 @@ namespace KitchenManagement
             kitchen.AddNewHelper(new Helper("Better Simulation Helper", 450, new DateTime(1965, 11, 06)));
             kitchen.AddNewHelper(new Helper("Favourite Simulation Helper", 1100, new DateTime(1985, 09, 01)));
 
-            
+            Random rnd = new Random();
+
+            foreach (var helper in kitchen.Helpers)
+            {
+                helper.AddIngredient((Ingredient)rnd.Next(0, 3));
+            }
+
+            kitchen.Chef.YellForIngerdients(Ingredient.CARROT, kitchen);
+            kitchen.Chef.YellForIngerdients(Ingredient.MEAT, kitchen);
+            kitchen.Chef.YellForIngerdients(Ingredient.POTATOE, kitchen);
+
           
         }
     }

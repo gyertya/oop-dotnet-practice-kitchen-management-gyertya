@@ -19,7 +19,12 @@ namespace KitchenManagement.Employee
             Console.WriteLine("We are out");
         }
 
-        public bool HaveIngredient(Ingredient ingredient)
+        public void AddIngredient(Ingredient ingredient)
+        {
+            Ingredients[(int)ingredient]++;
+        }
+
+        public bool GiveIngredientToChef(Ingredient ingredient)
         {
             if (Ingredients[(int)ingredient] > 0)
             {
