@@ -14,17 +14,17 @@ namespace KitchenManagement.Employee
         {
         }
 
-        public void Yell(Ingredient ingredient)
+        public void Yell(Ingredients ingredient)
         {
             Console.WriteLine("We are out from " + ingredient.ToString());
         }
 
-        public void AddIngredient(Ingredient ingredient)
+        public void AddIngredient(Ingredients ingredient)
         {
             Ingredients[(int)ingredient]++;
         }
 
-        public bool GiveIngredientToChef(Ingredient ingredient)
+        public bool GiveIngredientToChef(Ingredients ingredient)
         {
             if (Ingredients[(int)ingredient] > 0)
             {

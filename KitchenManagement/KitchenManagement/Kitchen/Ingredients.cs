@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace KitchenManagement
 {
-    enum Ingredient
+    enum Ingredients
     {
         CARROT,
         POTATOE,

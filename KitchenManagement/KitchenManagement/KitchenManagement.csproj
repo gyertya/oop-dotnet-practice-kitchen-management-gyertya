@@ -48,7 +48,7 @@
     <Compile Include="Employee\KnifeUser\KnifeUser.cs" />
     <Compile Include="Employee\Employee.cs" />
     <Compile Include="Employee\Helper.cs" />
-    <Compile Include="Kitchen\Ingredient.cs" />
+    <Compile Include="Kitchen\Ingredients.cs" />
     <Compile Include="Kitchen\Kitchen.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
