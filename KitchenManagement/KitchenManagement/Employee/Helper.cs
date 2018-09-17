@@ -8,7 +8,7 @@ namespace KitchenManagement.Employee
 {
     class Helper : Employee
     {
-        public int[] Ingredients { get; set; } = new int[3] { 0, 0, 0 };
+        private int[] ingredient = new int[3] { 0, 0, 0 };
 
         public Helper(string name, int salary, DateTime birthDate) : base(name, salary, birthDate)
         {
@@ -19,16 +19,16 @@ namespace KitchenManagement.Employee
             Console.WriteLine("We are out from " + ingredient.ToString());
         }
 
-        public void AddIngredient(Ingredients ingredient)
+        public void AddIngredient(Ingredients newIngredient)
         {
-            Ingredients[(int)ingredient]++;
+            ingredient[(int)newIngredient]++;
         }
 
-        public bool GiveIngredientToChef(Ingredients ingredient)
+        public bool GiveIngredientToChef(Ingredients ing)
         {
-            if (Ingredients[(int)ingredient] > 0)
+            if (ingredient[(int)ing] > 0)
             {
-                Ingredients[(int)ingredient]--;
+                ingredient[(int)ing]--;
                 return true;
             }
             return false;

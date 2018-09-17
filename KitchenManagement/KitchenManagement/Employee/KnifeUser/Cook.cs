@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace KitchenManagement.Employee
 {
-    class Cook : KnifeUser
+    class Cook : KnifeOwner
     {
         public override void DoCooking()
         {

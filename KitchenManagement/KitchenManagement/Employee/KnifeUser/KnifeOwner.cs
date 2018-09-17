@@ -6,11 +6,11 @@ using System.Threading.Tasks;
 
 namespace KitchenManagement.Employee
 {
-    class KnifeUser : Employee
+    class KnifeOwner : Employee
     {
         private bool knifeSet;
 
-        public KnifeUser(string name, int salary, DateTime birthDate) : base(name, salary, birthDate) { }
+        public KnifeOwner(string name, int salary, DateTime birthDate) : base(name, salary, birthDate) { }
         
         public void HasKnifeSet()
         {
