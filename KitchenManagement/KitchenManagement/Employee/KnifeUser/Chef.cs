@@ -8,16 +8,15 @@ namespace KitchenManagement.Employee
 {
     class Chef : KnifeUser
     {
-        public Chef(string name, int salary, DateTime birthDate)
+        public Chef(string name, int salary, DateTime birthDate): base(name, salary, birthDate)
         {
-            Name = name;
-            SalaryInUSD = salary;
-            BirthDate = birthDate;
         }
 
         public override void DoCooking()
         {
             Console.WriteLine("Argh argh!");
         }
+
+        
     }
 }

@@ -22,6 +22,7 @@ namespace KitchenManagement
             kitchen.AddNewHelper(new Helper("Better Simulation Helper", 450, new DateTime(1965, 11, 06)));
             kitchen.AddNewHelper(new Helper("Favourite Simulation Helper", 1100, new DateTime(1985, 09, 01)));
 
+            
           
         }
     }

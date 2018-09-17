@@ -13,11 +13,7 @@ namespace KitchenManagement.Employee
             Console.WriteLine($"{this.Name} is cooking.");
         }
 
-        public Cook(string name, int salary, DateTime birthDate)
-        {
-            Name = name;
-            SalaryInUSD = salary;
-            BirthDate = birthDate;
-        }
+        public Cook(string name, int salary, DateTime birthDate) : base(name, salary, birthDate) { }
+
     }
 }

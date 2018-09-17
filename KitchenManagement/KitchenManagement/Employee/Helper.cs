@@ -10,11 +10,8 @@ namespace KitchenManagement.Employee
     {
         public int[] Ingredients { get; set; } = new int[3] { 0, 0, 0 };
 
-        public Helper(string name, int salary, DateTime birthDate)
+        public Helper(string name, int salary, DateTime birthDate) : base(name, salary, birthDate)
         {
-            Name = name;
-            SalaryInUSD = salary;
-            BirthDate = birthDate;
         }
 
         public void Yell()
