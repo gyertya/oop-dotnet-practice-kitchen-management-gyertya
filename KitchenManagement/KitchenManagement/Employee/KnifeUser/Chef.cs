@@ -23,14 +23,17 @@ namespace KitchenManagement.Employee
             {
                 if (helper.GiveIngredientToChef(ingredient))
                 {
-                    kitchen.Cooks.First().DoCooking();
+                    foreach (var cook in kitchen.Cooks)
+                    {
+                        cook.DoCooking();
+                    }
                     return;
                 }
             }
 
             foreach (var helper in kitchen.Helpers)
             {
-                helper.Yell();
+                helper.Yell(ingredient);
             }
         }
     }

@@ -14,9 +14,9 @@ namespace KitchenManagement.Employee
         {
         }
 
-        public void Yell()
+        public void Yell(Ingredient ingredient)
         {
-            Console.WriteLine("We are out");
+            Console.WriteLine("We are out from " + ingredient.ToString());
         }
 
         public void AddIngredient(Ingredient ingredient)
