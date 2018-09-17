@@ -4,10 +4,12 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace KitchenManagement
+namespace KitchenManagement.Employee
 {
-    class KnifeUser:Employee
+    class KnifeUser : Employee
     {
         public bool KnifeSet { get; set; }
+
+        public virtual void DoCooking() { }
     }
 }

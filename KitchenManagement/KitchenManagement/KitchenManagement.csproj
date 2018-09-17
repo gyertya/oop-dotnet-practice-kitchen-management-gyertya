@@ -43,12 +43,11 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Chef.cs" />
-    <Compile Include="Cook.cs" />
-    <Compile Include="KnifeUser.cs" />
-    <Compile Include="Employee.cs" />
-    <Compile Include="Helper.cs" />
-    <Compile Include="ICooker.cs" />
+    <Compile Include="Employee\KnifeUser\Chef.cs" />
+    <Compile Include="Employee\KnifeUser\Cook.cs" />
+    <Compile Include="Employee\KnifeUser\KnifeUser.cs" />
+    <Compile Include="Employee\Employee.cs" />
+    <Compile Include="Employee\Helper.cs" />
     <Compile Include="Ingredient.cs" />
     <Compile Include="Kitchen.cs" />
     <Compile Include="Program.cs" />

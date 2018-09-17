@@ -4,20 +4,20 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace KitchenManagement
+namespace KitchenManagement.Employee
 {
-    class Cook : KnifeUser, ICooker
+    class Chef : KnifeUser
     {
-        public void DoCooking()
-        {
-            Console.WriteLine($"{this.Name} is cooking.");
-        }
-
-        public Cook(string name, int salary, DateTime birthDate)
+        public Chef(string name, int salary, DateTime birthDate)
         {
             Name = name;
             SalaryInUSD = salary;
             BirthDate = birthDate;
+        }
+
+        public override void DoCooking()
+        {
+            Console.WriteLine("Argh argh!");
         }
     }
 }
