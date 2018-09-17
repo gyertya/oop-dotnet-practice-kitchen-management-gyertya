@@ -45,7 +45,7 @@
   <ItemGroup>
     <Compile Include="Chef.cs" />
     <Compile Include="Cook.cs" />
-    <Compile Include="Cooker.cs" />
+    <Compile Include="KnifeUser.cs" />
     <Compile Include="Employee.cs" />
     <Compile Include="Helper.cs" />
     <Compile Include="ICooker.cs" />

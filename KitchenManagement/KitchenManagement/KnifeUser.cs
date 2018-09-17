@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace KitchenManagement
 {
-    class Cooker:Employee
+    class KnifeUser:Employee
     {
         public bool KnifeSet { get; set; }
     }

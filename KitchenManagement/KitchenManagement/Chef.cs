@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace KitchenManagement
 {
-    class Chef : Cooker, ICooker
+    class Chef : KnifeUser, ICooker
     {
         private static Chef chef;
 

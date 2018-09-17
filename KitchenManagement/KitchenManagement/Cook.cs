@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace KitchenManagement
 {
-    class Cook : Cooker, ICooker
+    class Cook : KnifeUser, ICooker
     {
         public void DoCooking()
         {
